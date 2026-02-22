@@ -2,6 +2,7 @@ import React from 'react';
 import { FlatList, RefreshControl, Alert } from 'react-native';
 import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
+import { useNavigation } from '@react-navigation/native';
 import { usePlants, useWaterPlant } from '../hooks/usePlants';
 import { PlantCard } from '../components/PlantCard';
 import { Plant } from '../types';
@@ -96,11 +97,10 @@ const FABText = styled.Text`
   color: white;
 `;
 
-interface PlantsListScreenProps {
-  navigation: any;
-}
+interface PlantsListScreenProps {}
 
-export const PlantsListScreen: React.FC<PlantsListScreenProps> = ({ navigation }) => {
+export const PlantsListScreen: React.FC<PlantsListScreenProps> = () => {
+  const navigation = useNavigation<any>();
   const { t } = useTranslation();
   const { data: plants = [], isLoading, refetch } = usePlants();
   const waterPlant = useWaterPlant();
@@ -144,7 +144,7 @@ export const PlantsListScreen: React.FC<PlantsListScreenProps> = ({ navigation }
         <HeaderSubtitle>
           {plants.length === 0
             ? t('plants.empty.subtitle')
-            : `${plants.length} plant${plants.length !== 1 ? 's' : ''} in your collection`}
+            : t('plants.collectionCount', { count: plants.length })}
         </HeaderSubtitle>
       </Header>
 

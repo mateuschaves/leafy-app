@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
+import { useNavigation } from '@react-navigation/native';
 
 const Container = styled.SafeAreaView`
   flex: 1;
@@ -75,11 +76,10 @@ const ArrowText = styled.Text`
   color: ${({ theme }) => theme.colors.text.muted};
 `;
 
-interface AddPlantScreenProps {
-  navigation: any;
-}
+interface AddPlantScreenProps {}
 
-export const AddPlantScreen: React.FC<AddPlantScreenProps> = ({ navigation }) => {
+export const AddPlantScreen: React.FC<AddPlantScreenProps> = () => {
+  const navigation = useNavigation<any>();
   const { t } = useTranslation();
 
   return (

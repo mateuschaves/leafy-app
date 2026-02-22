@@ -18,6 +18,8 @@
   },
   "plants": {
     "title": "Minhas Plantas",
+    "collectionCount": "{{count}} planta na sua coleção",
+    "collectionCount_other": "{{count}} plantas na sua coleção",
     "empty": {
       "title": "Nenhuma planta ainda",
       "subtitle": "Adicione sua primeira planta do catálogo ou crie uma personalizada",
@@ -75,6 +77,8 @@
     "search": "Buscar plantas...",
     "addToCollection": "Adicionar à coleção",
     "added": "Adicionada!",
+    "wateringEvery": "💧 A cada {{count}} dia",
+    "wateringEvery_other": "💧 A cada {{count}} dias",
     "categories": {
       "all": "Todas",
       "succulents": "Suculentas",

@@ -15,7 +15,7 @@ const supportedLocales = ['en', 'pt-BR'];
 const fallbackLanguage = 'en';
 
 const detectedLanguage = supportedLocales.find(
-  (locale) => deviceLocale.startsWith(locale) || deviceLocale === locale
+  (locale) => deviceLocale.startsWith(locale)
 ) ?? fallbackLanguage;
 
 i18n

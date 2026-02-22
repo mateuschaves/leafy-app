@@ -3,6 +3,7 @@ import { FlatList } from 'react-native';
 import styled from 'styled-components/native';
 import { useTheme } from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
+import { useNavigation } from '@react-navigation/native';
 import { catalogPlants } from '../data/catalogPlants';
 import { CatalogPlant, PlantCategory } from '../types';
 
@@ -127,11 +128,10 @@ const AddButtonText = styled.Text`
 
 const CATEGORIES: PlantCategory[] = ['all', 'succulents', 'tropical', 'herbs', 'flowering'];
 
-interface CatalogScreenProps {
-  navigation: any;
-}
+interface CatalogScreenProps {}
 
-export const CatalogScreen: React.FC<CatalogScreenProps> = ({ navigation }) => {
+export const CatalogScreen: React.FC<CatalogScreenProps> = () => {
+  const navigation = useNavigation<any>();
   const { t } = useTranslation();
   const theme = useTheme();
   const [search, setSearch] = useState('');
@@ -193,7 +193,7 @@ export const CatalogScreen: React.FC<CatalogScreenProps> = ({ navigation }) => {
               <PlantDescription numberOfLines={2}>{item.description}</PlantDescription>
               <WateringBadge>
                 <WateringBadgeText>
-                  💧 Every {item.wateringIntervalDays} days
+                  {t('catalog.wateringEvery', { count: item.wateringIntervalDays })}
                 </WateringBadgeText>
               </WateringBadge>
             </PlantInfo>

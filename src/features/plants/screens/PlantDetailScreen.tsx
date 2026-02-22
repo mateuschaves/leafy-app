@@ -2,9 +2,14 @@ import React from 'react';
 import { Alert } from 'react-native';
 import styled from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
+import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { useWaterPlant, useDeletePlant } from '../hooks/usePlants';
 import { Plant } from '../types';
 import { format } from 'date-fns';
+
+type PlantDetailRouteParams = {
+  PlantDetail: { plant: Plant };
+};
 
 const Container = styled.SafeAreaView`
   flex: 1;
@@ -120,12 +125,11 @@ const DeleteButtonText = styled.Text`
   color: ${({ theme }) => theme.colors.error};
 `;
 
-interface PlantDetailScreenProps {
-  navigation: any;
-  route: { params: { plant: Plant } };
-}
+interface PlantDetailScreenProps {}
 
-export const PlantDetailScreen: React.FC<PlantDetailScreenProps> = ({ navigation, route }) => {
+export const PlantDetailScreen: React.FC<PlantDetailScreenProps> = () => {
+  const navigation = useNavigation();
+  const route = useRoute<RouteProp<PlantDetailRouteParams, 'PlantDetail'>>();
   const { plant } = route.params;
   const { t } = useTranslation();
   const waterPlant = useWaterPlant();

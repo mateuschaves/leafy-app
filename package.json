@@ -34,7 +34,6 @@
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@types/react": "~18.3.12",
-    "@types/styled-components-react-native": "^5.2.5",
     "typescript": "^5.3.3"
   },
   "private": true

@@ -18,6 +18,8 @@
   },
   "plants": {
     "title": "My Plants",
+    "collectionCount": "{{count}} plant in your collection",
+    "collectionCount_other": "{{count}} plants in your collection",
     "empty": {
       "title": "No plants yet",
       "subtitle": "Add your first plant from the catalog or create a custom one",
@@ -75,6 +77,8 @@
     "search": "Search plants...",
     "addToCollection": "Add to my collection",
     "added": "Added!",
+    "wateringEvery": "💧 Every {{count}} day",
+    "wateringEvery_other": "💧 Every {{count}} days",
     "categories": {
       "all": "All",
       "succulents": "Succulents",

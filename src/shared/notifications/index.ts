@@ -3,6 +3,8 @@ import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 import { Plant } from '../../features/plants/types';
 
+const DEFAULT_NOTIFICATION_HOUR = 9;
+
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
@@ -50,10 +52,10 @@ export const scheduleWateringNotification = async (
 
     if (nextWatering <= now) {
       nextWatering.setDate(now.getDate());
-      nextWatering.setHours(9, 0, 0, 0);
+      nextWatering.setHours(DEFAULT_NOTIFICATION_HOUR, 0, 0, 0);
       if (nextWatering <= now) {
         nextWatering.setDate(now.getDate() + 1);
-        nextWatering.setHours(9, 0, 0, 0);
+        nextWatering.setHours(DEFAULT_NOTIFICATION_HOUR, 0, 0, 0);
       }
     }
 

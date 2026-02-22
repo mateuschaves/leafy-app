@@ -3,8 +3,13 @@ import { Alert } from 'react-native';
 import styled from 'styled-components/native';
 import { useTheme } from 'styled-components/native';
 import { useTranslation } from 'react-i18next';
+import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { useAddPlant } from '../hooks/usePlants';
 import { PlantFormData } from '../types';
+
+type PlantFormRouteParams = {
+  PlantForm: { catalogPlant?: { name: string; description: string; wateringIntervalDays: number; emoji: string } };
+};
 
 const Container = styled.SafeAreaView`
   flex: 1;
@@ -118,12 +123,11 @@ const SaveButtonText = styled.Text`
 
 const EMOJI_OPTIONS = ['🌱', '🌿', '🌵', '🌸', '🌺', '🍃', '🪴', '🌻', '🌹', '🌷', '🍀', '🎋', '🎍', '🌾', '☘️', '🌲', '🌳'];
 
-interface PlantFormScreenProps {
-  navigation: any;
-  route?: { params?: { catalogPlant?: any } };
-}
+interface PlantFormScreenProps {}
 
-export const PlantFormScreen: React.FC<PlantFormScreenProps> = ({ navigation, route }) => {
+export const PlantFormScreen: React.FC<PlantFormScreenProps> = () => {
+  const navigation = useNavigation<any>();
+  const route = useRoute<RouteProp<PlantFormRouteParams, 'PlantForm'>>();
   const { t } = useTranslation();
   const theme = useTheme();
   const addPlant = useAddPlant();
