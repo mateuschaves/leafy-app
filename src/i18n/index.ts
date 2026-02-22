@@ -1,3 +1,7 @@
+import '@formatjs/intl-pluralrules/polyfill-force';
+import '@formatjs/intl-pluralrules/locale-data/en';
+import '@formatjs/intl-pluralrules/locale-data/pt';
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { getLocales } from 'expo-localization';
