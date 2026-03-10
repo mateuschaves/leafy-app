@@ -1,0 +1,106 @@
+{
+  "common": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "loading": "Carregando...",
+    "error": "Algo deu errado",
+    "retry": "Tentar novamente",
+    "confirm": "Confirmar",
+    "back": "Voltar",
+    "add": "Adicionar",
+    "done": "Concluído"
+  },
+  "tabs": {
+    "myPlants": "Minhas Plantas",
+    "catalog": "Catálogo"
+  },
+  "plants": {
+    "title": "Minhas Plantas",
+    "collectionCount": "{{count}} planta na sua coleção",
+    "collectionCount_other": "{{count}} plantas na sua coleção",
+    "empty": {
+      "title": "Nenhuma planta ainda",
+      "subtitle": "Adicione sua primeira planta do catálogo ou crie uma personalizada",
+      "addButton": "Adicionar Planta"
+    },
+    "card": {
+      "nextWatering": "Próxima rega",
+      "lastWatered": "Última rega",
+      "waterNow": "Regar agora",
+      "needsWater": "Precisa de água!",
+      "daysLeft": "{{count}} dia",
+      "daysLeft_other": "{{count}} dias"
+    },
+    "detail": {
+      "title": "Detalhes da Planta",
+      "wateringInterval": "Intervalo de rega",
+      "wateringInfo": "Informações de Rega",
+      "every": "A cada {{count}} dia",
+      "every_other": "A cada {{count}} dias",
+      "description": "Descrição",
+      "noDescription": "Nenhuma descrição fornecida.",
+      "markAsWatered": "Marcar como Regada 💧",
+      "delete": "Excluir Planta",
+      "deleteConfirm": "Tem certeza que deseja excluir esta planta?",
+      "notificationsEnabled": "Notificações ativadas",
+      "notificationsDisabled": "Notificações desativadas"
+    },
+    "add": {
+      "title": "Adicionar Planta",
+      "fromCatalog": "Do Catálogo",
+      "fromCatalogSubtitle": "Escolha da nossa coleção selecionada",
+      "custom": "Planta Personalizada",
+      "customDescription": "Crie sua própria planta com configurações personalizadas"
+    },
+    "form": {
+      "title": "Nova Planta",
+      "editTitle": "Editar Planta",
+      "namePlaceholder": "Nome da planta",
+      "nameLabel": "Nome",
+      "descriptionLabel": "Descrição",
+      "descriptionPlaceholder": "Escreva uma descrição...",
+      "wateringIntervalLabel": "Intervalo de rega (dias)",
+      "wateringIntervalPlaceholder": "ex: 3",
+      "savePlant": "Salvar Planta",
+      "validation": {
+        "nameRequired": "O nome da planta é obrigatório",
+        "intervalRequired": "O intervalo de rega é obrigatório",
+        "intervalInvalid": "Por favor, insira um número válido"
+      }
+    }
+  },
+  "catalog": {
+    "title": "Catálogo de Plantas",
+    "subtitle": "Escolha uma planta para adicionar",
+    "search": "Buscar plantas...",
+    "addToCollection": "Adicionar à coleção",
+    "added": "Adicionada!",
+    "wateringEvery": "💧 A cada {{count}} dia",
+    "wateringEvery_other": "💧 A cada {{count}} dias",
+    "categories": {
+      "all": "Todas",
+      "succulents": "Suculentas",
+      "tropical": "Tropical",
+      "herbs": "Ervas",
+      "flowering": "Florais"
+    }
+  },
+  "notifications": {
+    "permissionTitle": "Ativar Notificações",
+    "permissionMessage": "Permita que o Leafy te lembre quando suas plantas precisam de água.",
+    "permissionDeny": "Agora não",
+    "permissionAllow": "Permitir",
+    "wateringTitle": "💧 Hora de regar {{name}}!",
+    "wateringBody": "Sua {{name}} está com sede. Dê um pouco de amor hoje!",
+    "scheduled": "Lembrete de rega definido",
+    "cancelledAll": "Todos os lembretes cancelados"
+  },
+  "errors": {
+    "loadPlants": "Falha ao carregar plantas",
+    "savePlant": "Falha ao salvar planta",
+    "deletePlant": "Falha ao excluir planta",
+    "notifications": "Falha ao agendar notificação"
+  }
+}

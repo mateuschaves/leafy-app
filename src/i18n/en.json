@@ -1,0 +1,106 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "confirm": "Confirm",
+    "back": "Back",
+    "add": "Add",
+    "done": "Done"
+  },
+  "tabs": {
+    "myPlants": "My Plants",
+    "catalog": "Catalog"
+  },
+  "plants": {
+    "title": "My Plants",
+    "collectionCount": "{{count}} plant in your collection",
+    "collectionCount_other": "{{count}} plants in your collection",
+    "empty": {
+      "title": "No plants yet",
+      "subtitle": "Add your first plant from the catalog or create a custom one",
+      "addButton": "Add Plant"
+    },
+    "card": {
+      "nextWatering": "Next watering",
+      "lastWatered": "Last watered",
+      "waterNow": "Water now",
+      "needsWater": "Needs water!",
+      "daysLeft": "{{count}} day",
+      "daysLeft_other": "{{count}} days"
+    },
+    "detail": {
+      "title": "Plant Details",
+      "wateringInterval": "Watering interval",
+      "wateringInfo": "Watering Info",
+      "every": "Every {{count}} day",
+      "every_other": "Every {{count}} days",
+      "description": "Description",
+      "noDescription": "No description provided.",
+      "markAsWatered": "Mark as Watered 💧",
+      "delete": "Delete Plant",
+      "deleteConfirm": "Are you sure you want to delete this plant?",
+      "notificationsEnabled": "Notifications enabled",
+      "notificationsDisabled": "Notifications disabled"
+    },
+    "add": {
+      "title": "Add Plant",
+      "fromCatalog": "From Catalog",
+      "fromCatalogSubtitle": "Choose from our curated collection",
+      "custom": "Custom Plant",
+      "customDescription": "Create your own plant with custom settings"
+    },
+    "form": {
+      "title": "New Plant",
+      "editTitle": "Edit Plant",
+      "namePlaceholder": "Plant name",
+      "nameLabel": "Name",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Write a description...",
+      "wateringIntervalLabel": "Watering interval (days)",
+      "wateringIntervalPlaceholder": "e.g. 3",
+      "savePlant": "Save Plant",
+      "validation": {
+        "nameRequired": "Plant name is required",
+        "intervalRequired": "Watering interval is required",
+        "intervalInvalid": "Please enter a valid number"
+      }
+    }
+  },
+  "catalog": {
+    "title": "Plant Catalog",
+    "subtitle": "Choose a plant to add",
+    "search": "Search plants...",
+    "addToCollection": "Add to my collection",
+    "added": "Added!",
+    "wateringEvery": "💧 Every {{count}} day",
+    "wateringEvery_other": "💧 Every {{count}} days",
+    "categories": {
+      "all": "All",
+      "succulents": "Succulents",
+      "tropical": "Tropical",
+      "herbs": "Herbs",
+      "flowering": "Flowering"
+    }
+  },
+  "notifications": {
+    "permissionTitle": "Enable Notifications",
+    "permissionMessage": "Allow Leafy to remind you when your plants need water.",
+    "permissionDeny": "Not now",
+    "permissionAllow": "Allow",
+    "wateringTitle": "💧 Time to water {{name}}!",
+    "wateringBody": "Your {{name}} is thirsty. Give it some love today!",
+    "scheduled": "Watering reminder set",
+    "cancelledAll": "All reminders cancelled"
+  },
+  "errors": {
+    "loadPlants": "Failed to load plants",
+    "savePlant": "Failed to save plant",
+    "deletePlant": "Failed to delete plant",
+    "notifications": "Failed to schedule notification"
+  }
+}
